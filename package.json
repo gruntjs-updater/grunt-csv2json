@@ -1,0 +1,41 @@
+{
+  "name": "grunt-cvs2json",
+  "description": "Grunt task to turn CSVs into JSON",
+  "version": "0.1.0",
+  "homepage": "https://github.com/mrangelmarino/CSV2JSON",
+  "author": {
+    "name": "Angel Marino",
+    "email": "me@angelmarino.com",
+    "url": "http://www.angelmarino.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrangelmarino/CSV2JSON.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrangelmarino/CSV2JSON/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mrangelmarino/CSV2JSON/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "JSONStream": "^0.10.0",
+    "fast-csv": "^0.6.0",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
