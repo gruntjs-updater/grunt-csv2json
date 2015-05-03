@@ -20,9 +20,9 @@ module.exports = function(grunt) {
 		
 		var done = this.async(); // Grunt apparently isn't normally async friendly?
 			
-		var inputFilePath = './'+grunt.config.get('csv2html.options.inputFilePath')+'/';
+		var inputFilePath = './'+grunt.config.get('csv2json.options.inputFilePath')+'/';
 		
-		var outputFilePath = './'+grunt.config.get('csv2html.options.outputFilePath')+'/';
+		var outputFilePath = './'+grunt.config.get('csv2json.options.outputFilePath')+'/';
 								
 		// Check if specified .csv directory is valid
 		

@@ -1,6 +1,6 @@
-# CSV2JSON
+# csv2json
 
-> Turn CSVS into JSON
+> Turn CSVs into JSON
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
@@ -14,76 +14,42 @@ npm install CSV2JSON --save-dev
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('CSV2JSON');
+grunt.loadNpmTasks('csv2json');
 ```
 
 ## The "CSV2JSON" task
 
 ### Overview
-In your project's Gruntfile, add a section named `CSV2JSON` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `csv2json` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  CSV2JSON: {
-    options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
-  },
+  csv2json: {
+	  options: {
+		  inputFilePath: 'csv',
+		  outputFilePath: 'json'
+	  }
+  }
 });
 ```
 
 ### Options
 
-#### options.separator
+#### options.inputFilePath
 Type: `String`
-Default value: `',  '`
+Default value: `'csv'`
 
-A string value that is used to do something with whatever.
+A string value that points to the directory where your .csv file is.
 
-#### options.punctuation
+#### options.outputFilePath
 Type: `String`
-Default value: `'.'`
+Default value: `'json'`
 
-A string value that is used to do something else with whatever else.
+A string value that points to where your .json file will be output.
 
 ### Usage Examples
 
-#### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
-
-```js
-grunt.initConfig({
-  CSV2JSON: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
-
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
-
-```js
-grunt.initConfig({
-  CSV2JSON: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
-
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+`grunt csv2json:sample` will look for a .csv file named `sample` in the specified csv directory and automatically generate a corresponding JSON file in the specified JSON directory.
 
 ## Release History
 _(Nothing yet)_
