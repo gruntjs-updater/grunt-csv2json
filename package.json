@@ -1,5 +1,5 @@
 {
-  "name": "grunt-cvs2json",
+  "name": "grunt-csv2json",
   "description": "Grunt task to turn CSVs into JSON",
   "version": "0.1.2",
   "homepage": "https://github.com/mrangelmarino/csv2json",
