@@ -1,7 +1,7 @@
 {
   "name": "grunt-cvs2json",
   "description": "Grunt task to turn CSVs into JSON",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/mrangelmarino/CSV2JSON",
   "author": {
     "name": "Angel Marino",
